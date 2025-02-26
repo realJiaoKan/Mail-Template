@@ -6,7 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="color-scheme" content="only">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <style>
         @font-face {
             font-family: "HanaMin Regular";
@@ -36,17 +37,17 @@
         <td align="center" valign="middle" style="font-family: Arial, sans-serif; font-size: 1.5rem; color: #000;">
             <img alt="Please allow remote content to see the banner~"
                 src="https://raw.githubusercontent.com/realJiaoKan/Mail-Template/refs/heads/main/assets/banner.jpg"
-                style="width: 100%; max-height: 200px; object-fit: cover; line-height: 200px;">
+                border="0" style="width: 100%; max-height: 200px; object-fit: cover; line-height: 200px;">
         </td>
     </tr>
 
     <!-- Title -->
-    <tr bgcolor="#8272AD">
+    <tr class="title" bgcolor="#8272AD">
         <td>
             <table border="0" cellpadding="10" width="100%" align="left">
                 <td height="60" align="left"
                     style="font-family: 'Times New Roman', Times, HanaMin Regular, Yu Mincho, serif; font-size: 2rem; color: #EFEACC;">
-                    Template です!
+                    Emlyon Template です!
                 </td>
             </table>
         </td>
@@ -57,15 +58,16 @@
         <td>
             <table border="0" cellpadding="20" cellspacing="0" width="100%" align="left"
                 style="background-image: url('https://raw.githubusercontent.com/realJiaoKan/Mail-Template/refs/heads/main/assets/bg.png'); background-repeat: repeat;">
-                <td align="left" style="font-family: 'Times New Roman', Times, HanaMin Regular, Yu Mincho, serif; font-size: 1.2rem; color: black;
-                    background-color: rgba(255, 255, 255, 0.6);">
-                    <p>Dear Recipient,</p>
-
-                    Here's the message for you!<br>
-                    あなたへのメッセージです！<br>
-                    这是给您的一份信息！<br>
-
-                    <p>Sincerely,<br>JiaoKan</p>
+                <td class="content" align="left"
+                    style="font-family: 'Times New Roman', Times, HanaMin Regular, Yu Mincho, serif; font-size: 1.2rem; background-color: rgba(255, 255, 255, 0.6);">
+                    <span style="color: black;">
+                        Dear Recipient,<br>
+                        <br>
+                        Here's the message for you!<br>
+                        あなたへのメッセージです！<br>
+                        这是给您的一份信息！<br>
+                        <br>
+                        Sincerely, JiaoKan
                     </span>
                 </td>
             </table>
@@ -73,30 +75,33 @@
     </tr>
 
     <!-- Footer -->
-    <tr>
+    <tr class="footer" bgcolor="#EFEACC">
         <td>
-            <table border="0" cellpadding="5" cellspacing="5" width="100%" align="left" bgcolor="#EFEACC">
-                <td width="50px">
-                    <img alt="Avatar"
-                        src="https://raw.githubusercontent.com/realJiaoKan/Mail-Template/refs/heads/main/assets/avatar.png"
-                        border="0" style="height: 50px; border-radius: 50%;">
-                </td>
-                <td width="50px">
-                    <img alt="Avatar"
-                        src="https://raw.githubusercontent.com/realJiaoKan/Mail-Template/refs/heads/main/assets/emlyon.png"
-                        border="0" style="height: 50px;">
-                </td>
-                <td style="font-size: 1rem; color: #FCFAF2;">
-                    <span>
-                        <a href="mailto:deyi.wang@edu.em-lyon.com" style="color: #006C7F;">
-                            deyi.wang@edu.em-lyon.com
+            <table border="0" cellpadding="5" cellspacing="5" width="100%" align="left"
+                style="font-family: 'Courier New', Courier, monospace;">
+                <tr>
+                    <td width="50px" valign="middle">
+                        <img alt="Avatar"
+                            src="https://raw.githubusercontent.com/realJiaoKan/Mail-Template/refs/heads/main/assets/avatar.png"
+                            border="0" style="height: 50px; border-radius: 50%; vertical-align: middle;">
+                    </td>
+                    <td width="50px" valign="middle">
+                        <img alt="Avatar"
+                            src="https://raw.githubusercontent.com/realJiaoKan/Mail-Template/refs/heads/main/assets/emlyon.png"
+                            border="0" style="height: 50px; vertical-align: middle;">
+                    </td>
+                    <td valign="middle" style="font-size: 1rem; vertical-align: middle;">
+                        <span>
+                            <a href="mailto:deyi.wang@edu.em-lyon.com" style="color: #006C7F;">
+                                deyi.wang@edu.em-lyon.com
+                            </a>
+                        </span>
+                        <br>
+                        <a href="https://orcid.org/0009-0004-3361-6343" style="color: #006C7F;">
+                            My ORCID record
                         </a>
-                    </span>
-                    <br>
-                    <a href="https://orcid.org/0009-0004-3361-6343" style="color: #006C7F;">
-                        My ORCID record
-                    </a>
-                </td>
+                    </td>
+                </tr>
             </table>
         </td>
     </tr>
